@@ -238,8 +238,8 @@
       }
 
       #progressbar #personal:before {
-        font-family: FontAwesome;
-        content: "\f00c"
+        font-family: FontAwesome !important;
+        content: "\f19d"
       }
 
       #progressbar #payment:before {
@@ -298,7 +298,7 @@
   <body class='snippet-body'>
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-11 col-sm-9 col-md-10 col-lg-12 col-xl-8 text-center p-0 mt-3 mb-2">
+        <div class="col-11 col-sm-9 col-md-10 col-lg-10 col-xl-8 text-center p-0 mt-3 mb-2">
           <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
             <h2 id="heading">FORMULIR BIODATA MAHASISWA BARU</h2>
             <p>Lengkapi data di bawah ini dengan benar</p>
@@ -1150,17 +1150,24 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Unggah Foto</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Foto Pas</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+              <small>Rasio Foto : 4 x 6, atau max resolusi 300px x 450px, dengan max size : 200kb, Tipe file : jpg, jpeg, png</small>
+            </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button> -->
+            <button type="button" class="btn btn-primary">Upload</button>
           </div>
         </div>
       </div>
