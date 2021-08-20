@@ -7,7 +7,9 @@
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -234,22 +236,27 @@
 
       #progressbar #account:before {
         font-family: FontAwesome;
-        content: "\f007"
+        content: "\f007";
       }
 
       #progressbar #personal:before {
+        content: "\f0f7";
         font-family: FontAwesome;
-        content: "\f00c"
       }
 
       #progressbar #payment:before {
         font-family: FontAwesome;
-        content: "\f00c"
+        content: "\f0c3";
+      }
+
+      #progressbar #wali:before {
+        font-family: FontAwesome;
+        content: "\f0b1";
       }
 
       #progressbar #confirm:before {
         font-family: FontAwesome;
-        content: "\f030"
+        content: "\f00c";
       }
 
       #progressbar li:before {
@@ -314,7 +321,7 @@
                 <li id="payment">
                   <strong>Data Orang Tua</strong>
                 </li>
-                <li id="confirm">
+                <li id="wali">
                   <strong>Data Wali</strong>
                 </li>
                 <li id="confirm">
@@ -1094,8 +1101,10 @@
                           <td>Kebijakan</td>
                           <td>:</td>
                           <td>
-                            <input type="checkbox" required name="checkbox" value="check" id="agree"/>
-                            <span>Dengan ini saya menyatakan bahwa data yang saya isikan adalah data yang sebenarnya, jika di kemudian hari ternyata data yang saya isikan terbukti tidak benar maka saya bersedia digugurkan dan diproses sesuai aturan perundang-undangan.</span>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                              <input id="chk1" type="checkbox" name="chk" class="custom-control-input">
+                              <label for="chk1" class="custom-control-label text-sm">Dengan ini saya menyatakan bahwa data yang saya isikan adalah data yang sebenarnya, jika di kemudian hari ternyata data yang saya isikan terbukti tidak benar maka saya bersedia digugurkan dan diproses sesuai aturan perundang-undangan.</label>
+                            </div>
                           </td>
                         </tr>
                       </tbody>
